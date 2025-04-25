@@ -1,20 +1,36 @@
 let history = [];
 function add(a, b) {
+  if (isNaN(a) || isNaN(b)) {
+    console.log("Only numbers.");
+    return;
+  }
     let result = a + b;
     history.push(a + " + " + b + " = " + result);
     return result;
   }
   function subtract(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+      console.log("Only numbers.");
+      return;
+    }
     let result = a - b;
     history.push(a + " - " + b + " = " + result);
     return result;
   }
   function multiply(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+      console.log("Only numbers.");
+      return;
+    }
     let result = a * b;
     history.push(a + " * " + b + " = " + result);
     return result;
   }
   function divide(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+      console.log("Only numbers.");
+      return;
+    }
     if (b === 0) {
       console.log("Error: Cannot divide by zero!");
       return null;
